@@ -5,7 +5,7 @@
 <img src="https://www.ansible.com/hubfs/2016_Images/Assets/Ansible-Mark-Large-RGB-Pool.png?hsLang=en-us" width="10%" height="10%" alt="Ansible logo" align="right"/>
 <img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png" width="13%" height="13%" alt="Docker logo" align="right"/>
 <img src="https://logo-logos.com/wp-content/uploads/2016/11/Ubuntu_logo_icon.png" width="10%" height="10%" alt="Ubuntu logo" align="right"/>
-<img src="https://molecule.readthedocs.io/en/stable/_static/logo.png" width="13%" height="13%" alt="Molecule logo" align="right"/>
+<img src="https://molecule.readthedocs.io/en/stable/_static/logo.png" width="11%" height="11%" alt="Molecule logo" align="right"/>
 
 
 
