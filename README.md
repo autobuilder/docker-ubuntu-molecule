@@ -7,8 +7,6 @@
 <img src="https://logo-logos.com/wp-content/uploads/2016/11/Ubuntu_logo_icon.png" width="10%" height="10%" alt="Ubuntu logo" align="right"/>
 <img src="https://molecule.readthedocs.io/en/stable/_static/logo.png" width="12%" height="12%" alt="Molecule logo" align="right"/>
 
-
-
 [![Build Status](https://travis-ci.org/autobuilder/docker-ubuntu1604-ansible.svg?branch=master)](https://travis-ci.org/autobuilder/docker-ubuntu1604-ansible)
 ![Platform](https://img.shields.io/badge/platform-ubuntu-dd4814.svg?style=flat) 
 
