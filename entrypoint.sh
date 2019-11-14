@@ -45,10 +45,14 @@ ansible::molecule() {
   molecule test
 }
 
+ansible::molecule::install() {
+  pip install molecule
+}
 
 args=("$@")
 
 if [ "$0" = "$BASH_SOURCE" ] ; then
   >&2 echo -E "\nRunning Molecule...\n"
+  ansible::molecule::install
   ansible::molecule ${args[@]}
 fi
