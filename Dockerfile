@@ -1,21 +1,25 @@
-FROM ubuntu:latest
+FROM ubuntu:18.04
 LABEL maintainer="AutoBuilder24x7"
-
-ENV pip_packages "ansible pyopenssl ansible-lint molecule"
 
 # Install dependencies.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       python-software-properties \
-       software-properties-common \
+       apt-utils \
+       locales python-dev \
        python-setuptools \
-       wget rsyslog systemd systemd-cron sudo \
-    && apt-get clean \
-    && wget https://bootstrap.pypa.io/get-pip.py \
-    && python get-pip.py
+       python-pip \
+       software-properties-common \
+       rsyslog systemd systemd-cron sudo iproute2 \
+    && apt-get clean
+
+RUN apt-get install -y gcc
 
 # Install Ansible via Pip.
-RUN pip install $pip_packages
+RUN pip install --upgrade wheel
+RUN pip install pyopenssl
+RUN pip install ansible
+RUN pip install ansible-lint
+RUN pip install molecule
 
 # Install Ansible inventory file.
 RUN mkdir -p /etc/ansible
