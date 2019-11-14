@@ -1,7 +1,7 @@
-FROM ubuntu:16.04
+FROM ubuntu:latest
 LABEL maintainer="AutoBuilder24x7"
 
-ENV pip_packages "ansible pyopenssl"
+ENV pip_packages "ansible pyopenssl ansible-lint molecule"
 
 # Install dependencies.
 RUN apt-get update \
